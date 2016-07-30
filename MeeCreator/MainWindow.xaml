@@ -1,0 +1,125 @@
+﻿<Window x:Class="MeeCreator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MeeCreator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" ResizeMode="CanMinimize">
+    <StackPanel x:Name="MainContent" Orientation="Horizontal" RenderTransformOrigin="0.514,0.495" HorizontalAlignment="Right">
+        <TabControl Margin="0,0,0,-0.2" Width="218">
+            <TabItem Header="Face">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <StackPanel>
+                        <Label>Face Move</Label>
+                        <Label>Face Size</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Slider x:Name="FaceSlider1" Maximum="150" Width="100" RenderTransformOrigin="0.5,0.5" Value="68" Height="25.6"/>
+                        <Slider x:Name="FaceSlider2" Maximum="300" Minimum="100" Width="100" RenderTransformOrigin="0.5,0.5" Value="160" Height="25.6"/>
+                        <RadioButton x:Name="Hair1" Checked="Hair1_Checked">Hair 1</RadioButton>
+                        <RadioButton x:Name="Hair2" Checked="Hair2_Checked">Hair 2</RadioButton>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Eyes">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <StackPanel>
+                        <Label Height="25">Right Eye left/right</Label>
+                        <Label Height="25">Right Eye Up/Down</Label>
+                        <Label Height="25">Right Eye Size Y</Label>
+                        <Label Height="25">Right Eye Size X</Label>
+
+
+
+                        <Label Height="25" Margin="0,40,0,0">Left Eye left/right</Label>
+                        <Label Height="25">Left Eye Up/Down</Label>
+                        <Label Height="25">Left Eye Size Y</Label>
+                        <Label Height="25">Left Eye Size X</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Slider x:Name="RightEyeSlider1" Maximum="250" Width="100" RenderTransformOrigin="0.5,0.5" Value="160" Minimum="20" Height="25"/>
+                        <Slider x:Name="RightEyeSlider2" Maximum="270" Width="100" RenderTransformOrigin="0.5,0.5" Value="90" Height="25"/>
+                        <Slider x:Name="RightEyeSlider3" Maximum="100" Width="100" RenderTransformOrigin="0.5,0.5" Value="40" Height="25"/>
+                        <Slider x:Name="RightEyeSlider4" Maximum="100" Width="100" RenderTransformOrigin="0.5,0.5" Value="20" Height="25"/>
+
+
+                        <Slider x:Name="LeftEyeSlider1" Maximum="250" Width="100" RenderTransformOrigin="0.5,0.5" Value="110" Minimum="20" Margin="0,40,0,0" Height="25"/>
+                        <Slider x:Name="LeftEyeSlider2" Maximum="270" Width="100" RenderTransformOrigin="0.5,0.5" Value="90" Height="25"/>
+                        <Slider x:Name="LeftEyeSlider3" Maximum="100" Width="100" RenderTransformOrigin="0.5,0.5" Value="40" Height="25"/>
+                        <Slider x:Name="LeftEyeSlider4" Maximum="100" Width="100" RenderTransformOrigin="0.5,0.5" Value="20" Height="25"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Color">
+                <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                    <StackPanel>
+                        <Label>Right Eye Color</Label>
+                        <Label Margin="0,85,0,0">Left Eye Color</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Slider x:Name="RightEyeSliderR" Maximum="255" Width="100" RenderTransformOrigin="0.5,0.5" Value="20" Height="25" ValueChanged="RightEyeSliderR_ValueChanged"/>
+                        <Slider x:Name="RightEyeSliderG" Maximum="255" Width="100" RenderTransformOrigin="0.5,0.5" Value="20" Height="25" ValueChanged="RightEyeSliderG_ValueChanged"/>
+                        <Slider x:Name="RightEyeSliderB" Maximum="255" Width="100" RenderTransformOrigin="0.5,0.5" Value="20" Height="25" ValueChanged="RightEyeSliderB_ValueChanged"/>
+
+                        <Slider x:Name="LeftEyeSliderR" Maximum="255" Width="100" RenderTransformOrigin="0.5,0.5" Value="0" Height="25"  Margin="0,40,0,0" ValueChanged="LeftEyeSliderR_ValueChanged"/>
+                        <Slider x:Name="LeftEyeSliderG" Maximum="255" Width="100" RenderTransformOrigin="0.5,0.5" Value="0" Height="25" ValueChanged="LeftEyeSliderG_ValueChanged"/>
+                        <Slider x:Name="LeftEyeSliderB" Maximum="255" Width="100" RenderTransformOrigin="0.5,0.5" Value="0" Height="25" ValueChanged="LeftEyeSliderB_ValueChanged"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Nose">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <StackPanel>
+                        <Label>Nose Move X</Label>
+                        <Label>Nose Move Y</Label>
+                        <Label>Nose Size Y</Label>
+                        <Label>Nose Size X</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Slider x:Name="NoseSlider1" Maximum="100" Width="100" RenderTransformOrigin="0.5,0.5" Minimum="-120" Height="25.6"/>
+                        <Slider x:Name="NoseSlider2" Maximum="100" Width="100" RenderTransformOrigin="0.5,0.5" Height="25.6" Minimum="-150"/>
+                        <Slider x:Name="NoseSlider3" Maximum="2" Width="100" RenderTransformOrigin="0.5,0.5" Height="25.6" Value="1"/>
+                        <Slider x:Name="NoseSlider4" Maximum="2" Width="100" RenderTransformOrigin="0.5,0.5" Height="25.6" Value="1"/>
+                    </StackPanel>
+                </StackPanel>
+
+            </TabItem>
+            <TabItem Header="Mouth">
+                <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                    <StackPanel>
+                        <Label>Mouth Move X</Label>
+                        <Label>Mouth Move Y</Label>
+                        <Label>Mouth Size Y</Label>
+                        <Label>Mouth Size X</Label>
+                    </StackPanel>
+                    <StackPanel>
+                        <Slider x:Name="MouthSlider1" Maximum="250" Width="100" RenderTransformOrigin="0.5,0.5" Value="220" Minimum="20" Height="25.6"/>
+                        <Slider x:Name="MouthSlider2" Maximum="270" Width="100" RenderTransformOrigin="0.5,0.5" Value="100" Height="25.6"/>
+                        <Slider x:Name="MouthSlider3" Maximum="200" Width="100" RenderTransformOrigin="0.5,0.5" Value="30" Height="25.6"/>
+                        <Slider x:Name="MouthSlider4" Maximum="200" Width="100" RenderTransformOrigin="0.5,0.5" Value="100" Height="25.6"/>
+                    </StackPanel>
+                </StackPanel>
+
+            </TabItem>
+        </TabControl>
+        <Canvas x:Name="FaceCanvas" Width="300" Background="BurlyWood" Margin="0,0,0,-0.2">
+            <Ellipse Height = "229" Width="{Binding Value, ElementName=FaceSlider2}" Canvas.Left="{Binding Value, ElementName=FaceSlider1}" Fill="Firebrick" Canvas.Top="47"/>
+            <Ellipse Height="{Binding Value, ElementName=MouthSlider3}" Width="{Binding Value, ElementName=MouthSlider4}" Fill="Black" Canvas.Left="{Binding Value, ElementName=MouthSlider2}" Canvas.Top="{Binding Value, ElementName=MouthSlider1}"/>
+            <Ellipse x:Name="LeftEyeEllipse" Height="{Binding Value, ElementName=LeftEyeSlider3}" Width="{Binding Value, ElementName=LeftEyeSlider4}" Fill="Aqua" Canvas.Left="{Binding Value, ElementName=LeftEyeSlider1}" Canvas.Top="{Binding Value, ElementName=LeftEyeSlider2}"/>
+            <Ellipse x:Name="RightEyeEllipse" Height="{Binding Value, ElementName=RightEyeSlider3}" Width="{Binding Value, ElementName=RightEyeSlider4}" Fill="Aqua" Canvas.Left="{Binding Value, ElementName=RightEyeSlider1}" Canvas.Top="{Binding Value, ElementName=RightEyeSlider2}"/>
+            <Polygon Points="0,-1 -1,1 1,1"  Fill="BlueViolet"  Width="55"  Height="44"  Stretch="Fill" Canvas.Left="120" Canvas.Top="147" RenderTransformOrigin="0.5,0.5" >
+                <Polygon.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="{Binding Value, ElementName=NoseSlider4}" ScaleY="{Binding Value, ElementName=NoseSlider3}"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="{Binding Value, ElementName=NoseSlider1}" Y="{Binding Value, ElementName=NoseSlider2}"/>
+                    </TransformGroup>
+                </Polygon.RenderTransform>
+            </Polygon>
+            <Polygon  x:Name="Hair" Points="-1,0 1,0 1,1 .8,1 .5,.5 -.5,.5 -.8,1 -1,1"  Fill="Blue"  Width="195"  Height="135"  Stretch="Fill" Canvas.Left="50" Canvas.Top="22" />
+        </Canvas>
+    </StackPanel>
+</Window>

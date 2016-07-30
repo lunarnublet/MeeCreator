@@ -1,0 +1,17 @@
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\bin\Debug\MeeCreator.exe.config
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\bin\Debug\MeeCreator.exe
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\bin\Debug\MeeCreator.pdb
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\obj\Debug\MeeCreator.csprojResolveAssemblyReference.cache
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\obj\Debug\MainWindow.g.cs
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\obj\Debug\App.g.cs
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\obj\Debug\MeeCreator_MarkupCompile.cache
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\obj\Debug\MeeCreator_MarkupCompile.lref
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\obj\Debug\MainWindow.baml
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\obj\Debug\MeeCreator.g.resources
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\obj\Debug\MeeCreator.Properties.Resources.resources
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\obj\Debug\MeeCreator.csproj.GenerateResource.Cache
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\obj\Debug\MeeCreator.exe
+C:\dotNET\dotNET projects\MeeCreator\MeeCreator\obj\Debug\MeeCreator.pdb
+C:\MeeCreator\MeeCreator\bin\Debug\MeeCreator.exe.config
+C:\MeeCreator\MeeCreator\obj\Debug\MeeCreator.exe
+C:\MeeCreator\MeeCreator\obj\Debug\MeeCreator.pdb
